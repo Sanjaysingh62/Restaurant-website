@@ -1,0 +1,778 @@
+<!doctype html>
+<div class="carousel-item">
+  <img src="bg/bg2.jpg" class="d-block w-100" alt="...">
+  <div class="carousel-caption d-md-block">
+    <h5>Second slide label</h5>
+    <h5>Second slide label</h3>
+      <p>Some representative placeholder content for the second slide.</p>
+  </div>
+</div>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- font style -->
+  <script src="https://kit.fontawesome.com/5f110118f5.js" crossorigin="anonymous"></script>
+
+  <title>restaurant website !</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png">
+    </div>
+    <div class="nav">
+      <li class="active"><a href="#Home">Home</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Menu">Menu's</a></li>
+      <li><a href="#Special">Special</a></li>
+      <li><a href="#dishes">Dishes</a></li>
+    </div>
+    <i class="fas fa-bars" id="menubar"></i>
+  </header>
+
+
+
+
+  <!-- navbar st -->
+  <!-- <nav class="navbar fixed-top navbar-expand-lg">
+    <div class="container-fluid nav">
+      <img src="logo.png">
+      <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars" id="menubar"></i> </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mt-3">
+          <li class="active my-2">
+            <a href="#Home">Home</a>
+          </li>
+          <li class="my-2">
+            <a href="#About">About</a>
+          </li>
+          <li class="my-2">
+            <a href="#Menu">Menu</a>
+          </li>
+          <li class="my-2">
+            <a href="#Special">Special</a>
+          </li>
+          <li class="my-2">
+            <a href="#dishes">Dishes</a>
+          </li>
+        </ul>
+        <div class="icons navbar-dark py-2">
+          <i class="fas fa-search search active" data-bs-toggle="modal" data-bs-target="#searchModal"></i>
+          <i class="fas fa-user" id="login-btn" data-bs-toggle="modal" data-bs-target="#loginModal"></i>
+        </div>
+      </div>
+    </div>
+  </nav> -->
+  <!-- navbar end -->
+
+
+
+  <!--login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header login">
+          <form>
+            <div class="mb-2">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control input" placeholder="Enter your email" id="exampleInputEmail1"
+                aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-2">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control input" placeholder="Enter your password"
+                id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">login</button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- search modal -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header search">
+          <input type="text" placeholder="search here...">
+          <button type="button" class="btn-close btn" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- home section st -->
+  <div id="Home" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="bg/banner2.jpg" class="d-block w-100" alt="...">
+        <main class="px-3 main" style="max-width: 45rem;">
+          <h1> <span class="multiple-txt"></span></h1>
+          <h3>Specialty Of Foods</h3>
+          <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the
+            text, and add your own fullscreen background photo to make it your own.</p>
+          <a href=#RESERVATIONS><button class="btn">RESERVATIONS</button></a>
+        </main>
+        <!-- <div class="carousel-caption-d d-md-block">
+          <h2>Delicious Foods</h2>
+          <h3>Specialty Of Foods</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quos ipsum ullam laborum recusandae numquam
+            explicabo perferendis necessitatibus aut inventor.</p>
+          <a href=#RESERVATIONS><button class="btn">RESERVATIONS</button></a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- home section end -->
+
+  <!-- read more-->
+  <section class="containers" id="About">
+    <div class="card ">
+      <div class="card-body mx-5">
+        <h5 class="card-title">Restaurant History</h5>
+        <p class="card-texts">"Accumsan quis, vulputate sit amet sapien. Curabitur euismod vulputate nulla, non
+          fringilla neque condimentum placerat.Integer egestas ullamcorper purus Accumsan quis, vulputate sit amet
+          sapien. Curabitur euismod vulputate nulla."</p>
+        <p class="card-text">Pellentesque habitant morbi tristique senectus netus et malesuada fames turpis egestas.
+          Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+          egestas semper. Aenean ultricies mi vitae est. Mauris Eonec eu ribero sit amet quam egestas semper. Aenean are
+          ultricies mi vitae est tristique senectus et netus et malesuada placerat leo. </p>
+        <a href="#" class="btn btn-primary">READ MORE</a>
+      </div>
+    </div>
+  </section>
+  <!-- menu sections -->
+  <section class="container" id="Menu">
+    <div class="card-body mt-2">
+      <div class="text-center">
+        <h5 class="card-title">MENU'S</h5>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- 1rst row -->
+      <div class="row mt-5">
+        <div class="cards col-lg-6 m-auto" style="width: 23rem;">
+          <img src="png/1.jpg" class="cards-img-top" alt="...">
+          <div class="cards-body my-2">
+            <h5 class="cards-title">BREAKFAST</h5>
+            <div class="cards-text">
+              <p>Berries ______ $12</p>
+              <p>Eggs _________ $6</p>
+              <p>Green Tea ____ $16</p>
+              <p>Oatmeal ______ $12</p>
+              <p>Peanut _______ $15</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="cards col-lg-6 m-auto " style="width: 23rem;">
+          <img src="png/2.jpg" class="cards-img-top" alt="...">
+          <div class="cards-body my-2">
+            <h5 class="cards-title">BURGER</h5>
+            <div class="cards-text">
+              <p>Double Burger___ $15</p>
+              <p>Veg Burger______ $11</p>
+              <p>Luger Burder____ $12</p>
+              <p>Le Pigeon _______ $6</p>
+              <p>The Burger_______$22</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards col-lg-4 m-auto" style="width: 23rem;">
+          <img src="png/3.jpg" class="cards-img-top" alt="...">
+          <div class="cards-body my-2">
+            <h5 class="cards-title">CHICKEN</h5>
+            <div class="cards-text">
+              <p>Finger _____ $15</p>
+              <p>Grilled ____ $11</p>
+              <p>Wrap _______ $12</p>
+              <p>Prame ______ $6</p>
+              <p>Marsala _____$22</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd row -->
+      <div class="row mt-5">
+        <div class="cards col-lg-4 m-auto" style="width: 23rem;">
+          <img src="png/4.jpg" class="cards-img-top" alt="...">
+          <div class="cards-body my-2">
+            <h5 class="cards-title">Crezy beef</h5>
+            <div class="cards-text">
+              <p>BBQ beef _________ $12</p>
+              <p>beef fries _______ $6</p>
+              <p>beef Grilled _____ $16</p>
+              <p>beef meal ________ $12</p>
+              <p>beef bogorok _____ $15</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="cards col-lg-4 m-auto " style="width: 23rem;">
+          <img src="png/5.jpg" class="cards-img-top" alt="...">
+          <div class="cards-body my-2">
+            <h5 class="cards-title">rice bowl</h5>
+            <div class="cards-text">
+              <p>chicken rice_____ $15</p>
+              <p>chicken biryani__ $11</p>
+              <p>rice bowl______ $12</p>
+              <p>veg biryan_____ $6</p>
+              <p>plain rice______$22</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards col-lg-4 m-auto" style="width: 23rem;">
+          <img src="png/6.jpg" class="cards-img-top" alt="...">
+          <div class="cards-body my-2">
+            <h5 class="cards-title">CHICKEN</h5>
+            <div class="cards-text">
+              <p>Finger ________ $15</p>
+              <p>Grilled _______ $11</p>
+              <p>Wrap __________ $12</p>
+              <p>Prame _________ $6</p>
+              <p>Marsala ________$22</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd row -->
+      <div class="row mt-5">
+        <div class="cards col-lg-4 m-auto" style="width: 23rem;">
+          <img src="png/7.jpg" class="cards-img-top" alt="...">
+          <div class="cards-body my-2">
+            <h5 class="cards-title">BREAKFAST</h5>
+            <div class="cards-text">
+              <p>Berries ______ $12</p>
+              <p>Eggs _________ $6</p>
+              <p>Green Tea ___ $16</p>
+              <p>Oatmeal _____ $12</p>
+              <p>Peanut _______ $15</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="cards col-lg-4 m-auto " style="width: 23rem;">
+          <img src="png/8.jpg" class="cards-img-top" alt="...">
+          <div class="cards-body my-2">
+            <h5 class="cards-title">BURGER</h5>
+            <div class="cards-text">
+              <p>Double Burger___ $15</p>
+              <p>Veg Burger______ $11</p>
+              <p>Luger Burder____ $12</p>
+              <p>Le Pigeon _______ $6</p>
+              <p>The Burger_______$22</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards col-lg-4 m-auto" style="width: 23rem;">
+          <img src="png/9.jpg" class="cards-img-top" alt="...">
+          <div class="cards-body my-2">
+            <h5 class="cards-title">CHICKEN</h5>
+            <div class="cards-text">
+              <p>Finger _____ $15</p>
+              <p>Grilled ____ $11</p>
+              <p>Wrap _______ $12</p>
+              <p>Prame ______ $6</p>
+              <p>Marsala _____$22</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- special -->
+  <section class="container" id="Special">
+    <div class="card-body mt-2">
+      <div class="text-center">
+        <h5 class="card-title">Today Our Special's</h5>
+      </div>
+    </div>
+
+    <!-- 1 -->
+    <div class="row featurette d-flex text-center align-items-center m-2">
+      <div class="col-sm-6">
+        <h2 class="featurette-heading">American Burger Speacility</h2>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo totam iste ratione temporibus,
+          omnis natus blanditiis provident? Corporis, et. Voluptate recusandae omnis reprehenderit</p>
+        <a href="#" class="btn btn-primary">READ MORE</a>
+      </div>
+      <div class="col-sm-5 mx-auto mt-5">
+        <img src="sliders/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="">
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="row featurette d-flex text-center align-items-center m-2">
+      <div class="col-sm-6 order-md-2">
+        <h2 class="featurette-heading">American Burger Speacility</h2>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo totam iste ratione temporibus,
+          omnis natus blanditiis provident? Corporis, et. Voluptate recusandae omnis reprehenderit </p>
+        <a href="#" class="btn btn-primary">READ MORE</a>
+      </div>
+      <div class="col-sm-6 order-md-1 mt-5 mx-auto hov">
+        <img src="sliders/edward-franklin-Nb_Q-M3Cdzg-unsplash.jpg"
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="">
+      </div>
+    </div>
+
+    <!-- 3 -->
+
+
+    <div class="row featurette d-flex text-center align-items-center m-2">
+      <div class="col-sm-6">
+        <h2 class="featurette-heading">American Burger Speacility</h2>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo totam iste ratione temporibus,
+          omnis natus blanditiis provident? Corporis, et. Voluptate recusandae omnis reprehenderit</p>
+        <a href="#" class="btn btn-primary">READ MORE</a>
+      </div>
+      <div class="col-sm-6 mt-5 mx-auto">
+        <img src="sliders/spencer-davis-W_GSHCi0cR8-unsplash.jpg"
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="">
+      </div>
+  </section>
+
+
+  <!-- reservation -->
+  <div class="container" id="RESERVATIONS">
+    <div class="contactus">
+      <div class="cd text-center ">
+        <div class="card-body mt-5">
+          <h5 class="card-title mt-3">Book A Table</h5>
+          <p class="card-text">Some Trendy And Popular Courses Offerd</p>
+        </div>
+        <div class="open-close-time mt-5">
+          <p>Monday- Friday: <span>08am - 12pm</span></p>
+          <p>Saturday - Sunday: <span>10am - 11pm</span></p>
+        </div>
+      </div>
+      <div class="contact my-3">
+        <div class="row">
+          <div class="col-md-5 mt-3">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+          </div>
+          <div class=" col-md-5 mt-3 ">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+          </div>
+        </div>
+
+        <div class="row ">
+          <div class="col-md-5 mt-3">
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="col-md-5 mt-3">
+            <select class="form-control" name="fb_person" id="foodiebooking_person" aria-required="true">
+              <option value="">Number of Guests</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="8">9</option>
+              <option value="10">10</option>
+              <option value="more">More than 10</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mt-3">
+            <input type="date" class="form-control" id="date-time" placeholder="Enter date">
+          </div>
+          <div class="col-md-5 mt-3">
+            <input type="time" class="form-control" id="time" placeholder="Enter date">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cd text-center my-5">
+      <button class="btn">RESERVATIONS</button>
+    </div>
+
+  </div>
+
+  <!-- chefs -->
+  <div class="container-fluid " id="chefs">
+    <div class="chef-box">
+
+      <div class="cd text-center">
+        <div class="card-body mt-2">
+          <h5 class="card-title">Experienced Chefs</h5>
+          <p class="card-text">Some Special Teachers From The Industry!</p>
+        </div>
+      </div>
+      <div class="content mx-auto my-4">
+        <div class="box">
+          <img src="chiefs/1.png">
+          <div class="heading head1">
+            <h2>Enathon Jaction</h2>
+          </div>
+        </div>
+        <div class="box">
+          <img src="chiefs/3.png">
+          <div class="heading head2">
+            <h2>Devid Vaskar</h2>
+          </div>
+        </div>
+        <div class="box">
+          <img src="chiefs/5.png">
+          <div class="heading head3">
+            <h2>david Jaction</h2>
+          </div>
+        </div>
+        <div class="box">
+          <img src="chiefs/2.png">
+          <div class="heading head4">
+            <h2>Vaskar Enathon</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- dishes -->
+  <section class="container  my-1" id="dishes">
+    <div class="cd text-center">
+      <div class="card-body mt-2">
+        <h5 class="card-title">Dishes</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quisquam.</p>
+      </div>
+    </div>
+    <div class="card-group pt-4 ">
+      <div class="card m-2">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="png/The Milk Bar by Cafe Ish.jpeg">
+            </div>
+            <div class="carousel-item">
+              <img src="png/Food Photography (fast food).jpeg">
+            </div>
+            <div class="carousel-item">
+              <img src="png/Concept of pizza.jpeg">
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magni
+            facere dolor!</p>
+        </div>
+      </div>
+      <div class="card m-2">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="png/Pizza - food commercial photography.jpeg">
+            </div>
+            <div class="carousel-item">
+              <img src="png/Premium Photo Top view creative assortment with hamburger menu.jpeg">
+            </div>
+            <div class="carousel-item">
+              <img src="png/The Milk Bar by Cafe Ish.jpeg">
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quaerat
+            quisquam ratione.</p>
+        </div>
+      </div>
+      <div class="card m-2">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="png/Still life with red wine containing alcohol, barrel, and beverage.webp">
+            </div>
+            <div class="carousel-item">
+              <img src="png/The Resy Guide to the Best Pizza In Los Angeles — Resy Right This Way.png">
+            </div>
+            <div class="carousel-item">
+              <img src="png/Premium Photo Top view creative assortment with hamburger menu.jpeg">
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vel
+            eius ducimus?</p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="card-group pt-4 ">
+      <div class="card m-2">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="png/The Milk Bar by Cafe Ish.jpeg">
+            </div>
+            <div class="carousel-item">
+              <img src="png/Food Photography (fast food).jpeg">
+            </div>
+            <div class="carousel-item">
+              <img src="png/Concept of pizza.jpeg">
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magni
+            facere dolor!</p>
+        </div>
+      </div>
+      <div class="card m-2">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="png/Pizza - food commercial photography.jpeg">
+            </div>
+            <div class="carousel-item">
+              <img src="png/Premium Photo Top view creative assortment with hamburger menu.jpeg">
+            </div>
+            <div class="carousel-item">
+              <img src="png/The Milk Bar by Cafe Ish.jpeg">
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quaerat
+            quisquam ratione.</p>
+        </div>
+      </div>
+      <div class="card m-2">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="png/Still life with red wine containing alcohol, barrel, and beverage.webp">
+            </div>
+            <div class="carousel-item">
+              <img src="png/The Resy Guide to the Best Pizza In Los Angeles — Resy Right This Way.png">
+            </div>
+            <div class="carousel-item">
+              <img src="png/Premium Photo Top view creative assortment with hamburger menu.jpeg">
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vel
+            eius ducimus?</p>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+
+
+
+
+
+
+  <!-- footer section -->
+
+  <div class="container mt-2" id="Footer">
+
+    <div class="lgx-footer-area footer">
+      <div class="lgx-footer-single">
+        <img src="logo.png">
+        <address>
+          <a href="http://map.com"><i class="fa fa-map-marker"></a></i>
+          51 Francis Street, Darlinghurst <br>
+          NSW 2010, United States
+        </address>
+        <ul class="list-unstyled lgx-address-info">
+          <li><i class="fa fa-phone"></i>+61 1900 654 368</li>
+          <li><a href="http://gmail.com"><i class="fa fa-envelope"></a></i>office@educationplus.com</li>
+        </ul>
+      </div>
+      <!--//footer-area-->
+      <div class="lgx-footer-single">
+        <h2 class="title">Opening Time</h2>
+        <div class="opening-time-single">
+          Saterday- Sunday
+          <span><i>10:00</i> Am - <i>11:00</i> PM</span>
+        </div>
+        <div class="opening-time-single">
+          Saterday- Sunday
+          <span><i>10:00</i> Am - <i>11:00</i> PM</span>
+        </div>
+        <div class="opening-time-single">
+          Saterday- Sunday
+          <span><i>10:00</i> Am - <i>11:00</i> PM</span>
+        </div>
+      </div>
+      <!--//footer-area-->
+      <div class="lgx-footer-single">
+        <h2 class="title">The Menu</h2>
+        <ul class="list-unstyled sanj">
+          <li><a href="#">Speacial Items</a></li>
+          <li><a href="#">Fresh Breakfast</a></li>
+          <li><a href="#">Lunch Menu</a></li>
+          <li><a href="#">Dinner Items</a></li>
+          <li><a href="#">Fresh Food Zone</a></li>
+          <li><a href="#">We Offerd Food</a></li>
+        </ul>
+      </div>
+      <!--//footer-area-->
+      <div class="lgx-footer-single">
+        <h2 class="title">Newsletter</h2>
+        <div class="lgx-subscriber-area">
+          <p class="text">Don’t miss any updates all the astonishing offers we bring for you.</p>
+          <div class="lgx-subscriber">
+            <form class="subscribe-form lgx-subscribe-form">
+              <div class="form-group">
+                <input type="email" id="subscribe" placeholder="Ex: themearth@gmail.com"
+                  class="form-control lgx-input-form form-control">
+              </div>
+              <div class="form-group">
+                <button type="submit" name="lgx-submit" id="lgx-submit"
+                  class="btn lgx-btn lgx-submit the-submit-btn"><span>Subscribe</span></button>
+              </div>
+            </form>
+          </div> <!--//.SUBSCRIBE-->
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="container mt-3 top-section text-center">
+      <p class="float-end"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></p>
+      <p>© 2017 Restaurant is powered by <q>SANJAY</q>. The property of their owners.</p>
+    </footer>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- slider -->
+  <!-- <div class="container">
+    
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="bg/bg1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="bg/bg2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="bg/bg3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>-->
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+  <!-- scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- typed.js -->
+  <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+  <script type="text/javascript">
+    $(document).on('click', 'header .nav li', function () {
+      $(this).addClass('active').siblings().removeClass('active');
+    })
+    $(document).on('click', '.navbar .nav .collapse .icons i', function () {
+      $(this).addClass('active').siblings().removeClass('active');
+    })
+  </script>
+
+  <!-- custom js -->
+</body>
+<script src="js.js"></script>
+
+</html>
